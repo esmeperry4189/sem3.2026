@@ -39,3 +39,20 @@ while done:
 
 print("Thank you for entering a valid number.")
 
+# check for valid input and recyling code with a function (v1.2)
+# create a function to call every time i ask a user
+#  for a number. A function is a chink of code that does
+# something.
+# Functions can be used over and over again.
+# to use a function (call it), write out its name with
+# parentheses at the end.
+# to create a function, start with the word def
+def test_float_num():
+    while True:
+        try:
+            num = float(input("Please enter a number: "))
+            break
+            done = False
+            return num
+        except ValueError:
+            print("That is not a valid input. Please enter a number.")
